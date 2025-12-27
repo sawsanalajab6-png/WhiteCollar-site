@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog_single - WhiteCollar</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Line Icons -->
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-50">
+<!-- ================== nav bar ================== -->
+<nav>
+<!-- 🔵 TOP BAR (ثابت) -->
+<div class="w-full bg-gray-800 text-white text-sm py-2 fixed top-0 left-0 z-50">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+
+        <!-- Left Info -->
+        <div class="flex items-center gap-6">
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-teal-400"></i>
+                24 Olive Street, Prairie, NY 53580
+            </span>
+
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-green-400"></i>
+                whitecollar@gmail.com
+            </span>
+        </div>
+
+        <!-- Right Info -->
+        <div class="flex items-center gap-6">
+            <span class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-green-300"></i>
+                Mon - Fri: 8:00 am - 5:00 pm
+            </span>
+
+            <div class="flex items-center gap-3 text-lg">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 🔵 MAIN NAVBAR (ثابت) -->
+<nav class="bg-white shadow fixed top-10 left-0 w-full z-40">
+    <div class="container mx-auto flex justify-between items-center py-4">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <img src="../img/img_index/logo.png" alt="Logo" class="w-10 h-10 object-contain">
+
+            <div class="text-2xl font-semibold flex items-center gap-1">
+                <span class="text-blue-600">White</span>
+                <span class="text-gray-800">Collar</span>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <ul class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+
+            <li><a href="../index.html" class="hover:text-blue-600">Home</a></li>
+            <li><a href="../html/abute_us.html" class="hover:text-blue-600">About Us</a></li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle hover:text-blue-600" href="#" role="button" data-bs-toggle="dropdown">
+                    Pages
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/faq.html">FAQ</a></li>
+                    <li><a class="dropdown-item" href="../html/bloge_single.html">Bloge single</a></li>
+                    <li><a class="dropdown-item" href="../html/changelog.html">Changelog</a></li>
+                    <li><a class="dropdown-item" href="../html/404error.html">404 Error</a></li>
+                    <li><a class="dropdown-item" href="../html/license.html">License</a></li>
+                    <li><a class="dropdown-item" href="../html/password.html">Password</a></li>
+                    <li><a class="dropdown-item" href="../html/projccts.html">Projects</a></li>
+                    <li><a class="dropdown-item" href="../html/projccts_single.html">Projects Single</a></li>
+                    <li><a class="dropdown-item" href="../html/price_packes.html">Price Packes</a></li>
+                    <li><a class="dropdown-item" href="../html/servesis_single.html">Servesis Single</a></li>
+                    <li><a class="dropdown-item" href="../html/team.html">Team</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../html/our serveses.html" class="hover:text-blue-600">Services</a></li>
+            <li><a href="../html/bloge.html" class="hover:text-blue-600">Blog</a></li>
+            <li><a href="../html/contact.html" class="hover:text-blue-600">Contact Us</a></li>
+        </ul>
+
+        <!-- Button -->
+        <a href="#" class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">
+            Get Consulting
+        </a>
+    </div>
+</nav>
+</nav>
+<!-- ================== HERO / FEATURED IMAGE ================== -->
+<section class="relative mt-32 md:mt-40">
+    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+         alt="Woman working remotely" 
+         class="w-full h-96 md:h-screen object-cover">
+</section>
+<!-- ================== section 2 ================== -->
+<section class="py-20 px-6 md:px-12">
+    <div class="max-w-4xl mx-auto">
+      <!-- Article Title -->
+      <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-8 text-center md:text-left">
+        Team Identification, Benefits, and How to Build One that Works
+      </h1>
+
+      <!-- First Paragraph -->
+      <p class="text-xl text-gray-700 leading-relaxed mb-12 text-center md:text-left">
+        The Work & Life Style For All
+      </p>
+
+      <!-- First Block Quote -->
+      <div class="bg-emerald-500 text-white p-10 rounded-2xl my-16 text-center">
+        <p class="text-2xl font-medium leading-relaxed max-w-3xl mx-auto">
+          “At his best, man is the noblest of all animals; separated from law and justice he is the worst.”
+        </p>
+      </div>
+
+      <!-- Second Paragraph -->
+      <p class="text-lg text-gray-600 leading-relaxed mb-12">
+        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+      </p>
+
+      <!-- Second Block Quote -->
+      <div class="bg-emerald-500 text-white p-10 rounded-2xl my-16 text-center">
+        <p class="text-2xl font-medium leading-relaxed max-w-3xl mx-auto">
+          “At his best, man is the noblest of all animals; separated from law and justice he is the worst.”
+        </p>
+      </div>
+
+      <!-- Third Paragraph -->
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">The Work & Life Style For All</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-12">
+        Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+      </p>
+    </div>
+</section>
+<!-- ================== section 3 ================== -->
+<section class="py-20 px-6 md:px-12 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Related News</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Related Post 1 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row hover:shadow-2xl transition-shadow">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+               alt="Business Consulting" class="w-full md:w-64 h-64 object-cover">
+          <div class="p-8 flex-1">
+            <p class="text-emerald-500 font-semibold text-sm mb-2">April 20, 2023</p>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              A Business Consulting Chat can Produce
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Leverage agile frameworks to provide a robust synopsis for high level overviews...
+            </p>
+            <a href="#" class="text-emerald-600 font-medium hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Related Post 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row hover:shadow-2xl transition-shadow">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" 
+               alt="Email Marketing" class="w-full md:w-64 h-64 object-cover">
+          <div class="p-8 flex-1">
+            <p class="text-emerald-500 font-semibold text-sm mb-2">April 19, 2023</p>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Popular Email Marketing Techniques 2022
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Capitalize on low hanging fruit to identify a ballpark value added activity...
+            </p>
+            <a href="#" class="text-emerald-600 font-medium hover:underline">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- ================== footer ================== -->
+<footer class="footer">
+  <div class="container">
+
+    <!-- Top Icons Section -->
+    <div class="row mb-5 text-center text-md-start justify-content-between">
+      <div class="col-md-3 d-flex flex-column align-items-center md:items-start mb-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="../img/img_index/logo.png" alt="Logo" style="width:40px; height:40px; object-fit:contain;" />
+          <span class="text-white fw-bold fs-5">WhiteCollar</span>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+        <div>
+          <h6>Call Us</h6>
+          <p class="m-0">+01 569 896 654</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h6>Mail Us</h6>
+          <p class="m-0">Info@Example.com</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div>
+          <h6>Location</h6>
+          <p class="m-0">Amsterdam, 109-74</p>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Main Footer Links -->
+    <div class="row justify-content-between">
+
+      <div class="col-md-3 mb-4">
+        <h6>Quick Link</h6>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6>Our Services</h6>
+        <a href="#">Financial Consulting</a>
+        <a href="#">Business Management</a>
+        <a href="#">Consultant & Programs</a>
+        <a href="#">Company Management</a>
+        <a href="#">Insurance & Finance</a>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6>Utility Page</h6>
+        <a href="#">Style Guide</a>
+        <a href="#">Licenses</a>
+        <a href="#">Instructions</a>
+        <a href="#">Changelog</a>
+        <a href="#">404 Page</a>
+      </div>
+
+      <!-- Subscribe section -->
+      <div class="col-md-3">
+        <h6>Subscribe</h6>
+        <p>Join Our Mailing List & get our news.</p>
+        <div class="subscribe-box d-flex gap-2">
+          <input type="email" placeholder="your email address" />
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Bottom Footer -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="m-0">Copyright © <span class="text-indigo-400">WhiteCollar</span> | Designed by <span class="text-indigo-400">VictorFlow</span> - Powered by Webflow</p>
+
+      <div class="flex gap-4 text-lg mt-3 md:mt-0">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>White Collar site</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Remix Icons  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- font aousam -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+<!-- style lin -->
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- ================== nav bar ================== -->
+<nav>
+<!-- 🔵 TOP BAR (ثابت) -->
+<div class="w-full bg-gray-800 text-white text-sm py-2 fixed top-0 left-0 z-50">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+
+        <!-- Left Info -->
+        <div class="flex items-center gap-6">
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-teal-400"></i>
+                24 Olive Street, Prairie, NY 53580
+            </span>
+
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-green-400"></i>
+                whitecollar@gmail.com
+            </span>
+        </div>
+
+        <!-- Right Info -->
+        <div class="flex items-center gap-6">
+            <span class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-green-300"></i>
+                Mon - Fri: 8:00 am - 5:00 pm
+            </span>
+
+            <div class="flex items-center gap-3 text-lg">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 🔵 MAIN NAVBAR (ثابت) -->
+<nav class="bg-white shadow fixed top-10 left-0 w-full z-40">
+    <div class="container mx-auto flex justify-between items-center py-4">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <img src="img/img_index/logo.png" alt="Logo" class="w-10 h-10 object-contain">
+
+            <div class="text-2xl font-semibold flex items-center gap-1">
+                <span class="text-blue-600">White</span>
+                <span class="text-gray-800">Collar</span>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <ul class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+
+            <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+            <li><a href="./html/abute_us.html" class="hover:text-blue-600">About Us</a></li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle hover:text-blue-600" href="#" role="button" data-bs-toggle="dropdown">
+                    Pages
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./html/faq.html">FAQ</a></li>
+                    <li><a class="dropdown-item" href="./html/bloge_single.html">Bloge single</a></li>
+                    <li><a class="dropdown-item" href="./html/changelog.html">Changelog</a></li>
+                    <li><a class="dropdown-item" href="./html/404error.html">404 Error</a></li>
+                    <li><a class="dropdown-item" href="./html/license.html">License</a></li>
+                    <li><a class="dropdown-item" href="./html/password.html">Password</a></li>
+                    <li><a class="dropdown-item" href="./html/projccts.html">Projects</a></li>
+                    <li><a class="dropdown-item" href="./html/projccts_single.html">Projects Single</a></li>
+                    <li><a class="dropdown-item" href="./html/price_packes.html">Price Packes</a></li>
+                    <li><a class="dropdown-item" href="./html/servesis_single.html">Servesis Single</a></li>
+                    <li><a class="dropdown-item" href="./html/team.html">Team</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./html/our serveses.html" class="hover:text-blue-600">Services</a></li>
+            <li><a href="./html/bloge.html" class="hover:text-blue-600">Blog</a></li>
+            <li><a href="./html/contact.html" class="hover:text-blue-600">Contact Us</a></li>
+        </ul>
+
+        <!-- Button -->
+        <a href="#" class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">
+            Get Consulting
+        </a>
+    </div>
+</nav>
+</nav>
+<!-- ================== HERO SECTION ================== -->
+<section class="hero-section">
+
+    <!-- الصورة الأساسية -->
+    <img class="bg-img" src="img/img_index/meeting.jpg" />
+
+    <!-- طبقة البلور -->
+    <div class="hero-overlay"></div>
+
+    <!-- المحتوى -->
+    <div class="hero-content">
+
+        <p class="text-teal-300 text-sm mb-2 flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-400 rounded-full inline-block"></span>
+            Welcome to Whitecollar Solution
+        </p>
+
+        <h1 class="text-4xl font-bold mb-4 leading-tight">
+            The Best Value<br>
+            for <span class="text-green-400">Business</span> and<br>
+            Corporation
+        </h1>
+
+        <p class="text-gray-200 mb-5">
+            Collaboratively administrate empowered markets plug
+            and play networks dynamically procrastinated.
+        </p>
+
+        <!-- الأزرار -->
+        <div class="flex items-center gap-4 mt-4">
+
+            <a href="#" class="btn btn-success px-4 py-2">
+                Get Consulting
+            </a>
+
+            <a href="#" class="flex items-center gap-2 text-white hover:text-gray-300">
+                <span class="w-10 h-10 flex items-center justify-center rounded-full bg-indigo-400">
+                    ▶
+                </span>
+                Watch Videos
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- ================== SECTION 2================== -->
+<section class="container py-5" id="section2">
+    <div class="row align-items-center">
+
+        <!-- LEFT SIDE -->
+        <div class="col-lg-5 mb-4">
+            <img src="img/img_index/section2.jpeg" 
+                 class="rounded-lg shadow w-100" alt="">
+            
+            <h4 class="mt-4 font-semibold text-xl">
+                We’re Ready To Grow Your Business With Us
+            </h4>
+
+            <p class="text-gray-600 mt-2">
+                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative 
+                approaches to corporate strategy foster collaborative thinking to further.
+            </p>
+
+            <a href="#" class="text-dark underline font-medium">
+                Get In Touch
+            </a>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-lg-7 ps-lg-5">
+
+            <p class="text-sm text-gray-600 flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full inline-block"></span>
+                Welcome Whitecollar
+            </p>
+
+            <h2 class="text-3xl font-bold mt-2">
+                We Care About Your<br> Business Plan.
+            </h2>
+
+            <p class="text-gray-600 mt-3">
+                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+                to corporate strategy foster collaborative thinking to further.
+            </p>
+
+            <p class="text-gray-600 mt-2">
+                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches 
+                to corporate strategy foster collaborative thinking to further.
+            </p>
+
+            <!-- LIST WITH ICONS -->
+            <div class="mt-3">
+                <p class="flex items-center gap-2 text-base">
+                    <span class="text-green-500 text-xl">✔</span>
+                    Components of a Business Strategy
+                </p>
+                <p class="flex items-center gap-2 text-base">
+                    <span class="text-green-500 text-xl">✔</span>
+                    Business Consulting
+                </p>
+            </div>
+
+            <!-- INFO BOXES -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+
+                <div class="info-card bg-white shadow-sm">
+                    <h4 class="font-semibold text-lg">Experience</h4>
+                    <p class="text-gray-600 text-sm">
+                        Leverage frameworks to provide empowerment.
+                    </p>
+                </div>
+
+                <div class="info-card bg-white shadow-sm">
+                    <h4 class="font-semibold text-lg">Award Winner</h4>
+                    <p class="text-gray-600 text-sm">
+                        Iterative approaches to corporate strategy.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- BUTTON -->
+            <a href="#" class="mt-5 inline-block bg-indigo-600 text-white px-5 py-3 rounded-md shadow hover:bg-indigo-700 transition">
+                More About Us
+            </a>
+
+        </div>
+    </div>
+</section>
+<!-- ================== SECTION 3================== -->
+ <section class="brands-section">
+    <div class="brands-container">
+        <img src="img/img_index/logo1.png" alt="Brand 1">
+        <img src="img/img_index/logo2.png" alt="Brand 2">
+        <img src="img/img_index/logo3.png" alt="Brand 3">
+        <img src="img/img_index/logo4.png" alt="Brand 4">
+        <img src="img/img_index/logo5.png" alt="Brand 5">
+    </div>
+</section>
+<!-- ================== SECTION 4================== -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+        
+        <!-- العنوان -->
+        <p class="text-green-500 font-semibold mb-2 flex items-center justify-center gap-2">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            We Are Expertise In
+        </p>
+
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-12">
+            We Provide Professional <br> Business Solutions.
+        </h2>
+
+        <!-- البوكسات -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+
+            <!-- Box 1 -->
+            <div class="flex items-center justify-between bg-gray-100 p-6 rounded-xl shadow-sm">
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-800">Financial Consultancy</h4>
+                    <a href="#" class="text-blue-600 text-sm">Read More</a>
+                </div>
+                <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-landmark text-white text-xl"></i>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="flex items-center justify-between bg-gray-100 p-6 rounded-xl shadow-sm">
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-800">Business Management</h4>
+                    <a href="#" class="text-blue-600 text-sm">Read More</a>
+                </div>
+                <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-building text-white text-xl"></i>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="flex items-center justify-between bg-gray-100 p-6 rounded-xl shadow-sm">
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-800">Consultants & Program</h4>
+                    <a href="#" class="text-blue-600 text-sm">Read More</a>
+                </div>
+                <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-people-group text-white text-xl"></i>
+                </div>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="flex items-center justify-between bg-gray-100 p-6 rounded-xl shadow-sm">
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-800">Company Management</h4>
+                    <a href="#" class="text-blue-600 text-sm">Read More</a>
+                </div>
+                <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-industry text-white text-xl"></i>
+                </div>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="flex items-center justify-between bg-gray-100 p-6 rounded-xl shadow-sm">
+                <div class="text-left">
+                    <h4 class="font-bold text-gray-800">Financial & Insurance Jobs</h4>
+                    <a href="#" class="text-blue-600 text-sm">Read More</a>
+                </div>
+                <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-hand-holding-dollar text-white text-xl"></i>
+                </div>
+            </div>
+
+            <!-- More Services Button -->
+            <div class="bg-blue-600 p-6 rounded-xl shadow-sm flex items-center justify-center">
+                <a href="#" class="text-white font-semibold text-lg">More Services</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================== SECTION 5================== -->
+<section class="w-full h-screen overflow-hidden">
+    <div class="row g-0 h-100">
+
+        <!-- ===== LEFT SIDE (CONTENT) ===== -->
+        <div class="col-md-6 bg-[#2E333A] text-white flex items-center px-10">
+
+            <div>
+
+                <!-- Small tag -->
+                <span class="text-teal-400 text-sm font-semibold">
+                    ■ Why Choose Me
+                </span>
+
+                <!-- Title -->
+                <h1 class="text-4xl font-bold mt-3">
+                    We Provide Solutions To<br>
+                    Grow Your Business
+                </h1>
+
+                <!-- Paragraph -->
+                <p class="text-gray-300 mt-4 leading-relaxed">
+                    Leverage agile frameworks to provide a robust synopsis for high
+                    level overviews. Iterative approaches to corporate strategy foster
+                    collaborative thinking to further the overall proposition.
+                </p>
+
+                <!-- Stats Boxes -->
+                <div class="flex gap-4 mt-6">
+
+                    <div class="bg-[#3A3F47] rounded-xl p-5 text-center w-40">
+                        <h2 class="text-3xl font-bold text-teal-400">95%</h2>
+                        <p class="text-gray-300 text-sm mt-1">Clients<br>Quick Response</p>
+                    </div>
+
+                    <div class="bg-[#3A3F47] rounded-xl p-5 text-center w-40">
+                        <h2 class="text-3xl font-bold text-teal-400">85%</h2>
+                        <p class="text-gray-300 text-sm mt-1">Project<br>Finished Jobs</p>
+                    </div>
+
+                </div>
+
+                <!-- Icons Row -->
+                <div class="grid grid-cols-2 gap-5 mt-7">
+
+                    <div class="flex items-center gap-3">
+                        <span class="text-teal-400 text-2xl">●</span>
+                        <p class="font-semibold"><span class="text-teal-400 text-lg">2,800+</span> Active clients</p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="text-yellow-400 text-2xl">★</span>
+                        <p class="font-semibold">
+                            <span class="text-yellow-400 text-lg">1,670</span> • 5★ clients reviews
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <span class="text-blue-400 text-2xl">⬤</span>
+                        <p class="font-semibold">106+ </p>
+                    </div>
+
+                    <div>
+                        <a href="#" class="text-teal-400 underline font-semibold">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===== RIGHT SIDE (IMAGE) ===== -->
+        <div class="col-md-6 h-100">
+            <img src="img/img_index/section5.jpg"
+                 alt="" class="w-100 h-100 object-cover">
+        </div>
+
+    </div>
+</section>
+<!-- ================== SECTION 6================== -->
+<section class="py-5 px-4">
+
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-start mb-4">
+
+            <!-- Left Titles -->
+            <div>
+                <span class="text-teal-600 font-semibold text-sm">
+                    ■ Our Project
+                </span>
+
+                <h1 class="text-3xl font-bold mt-2">
+                    You can check our projects <br>
+                    as inspirations.
+                </h1>
+            </div>
+
+            <!-- Button -->
+            <div>
+                <a href="#"
+                   class="bg-teal-500 text-white px-4 py-2 rounded-md shadow hover:bg-teal-600 transition">
+                    More Work
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Images Row -->
+        <div class="row g-4">
+
+            <div class="col-12 col-md-3">
+                <img src="img/img_index/section6_1.png"
+                     class="w-100 project-img" alt="">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <img src="img/img_index/section6_2.png"
+                     class="w-100 project-img" alt="">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <img src="img/img_index/section6_3.png"
+                     class="w-100 project-img" alt="">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <img src="img/img_index/section6_4.png"
+                     class="w-100 project-img" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ================== SECTION 7================== -->
+<section class="py-20 container mx-auto">
+        <hr class="mb-10 opacity-30">
+
+        <div class="flex flex-col md:flex-row gap-10">
+
+            <!-- Left Title -->
+            <div class="w-full md:w-1/3">
+                <span class="text-green-500 text-sm font-semibold">● Testimonial</span>
+
+                <h2 class="text-3xl font-bold mt-2">What Our Client Say’s</h2>
+
+                <p class="text-gray-500 mt-3">
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews.
+                </p>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="bg-gray-100 shadow-sm p-6 rounded-lg w-full md:w-1/3">
+                <div class="flex items-center gap-4">
+                    <img src="img/img_index/section7_2.jpg" class="rounded-full w-14 h-14" alt="">
+                    <div>
+                        <h4 class="font-bold">Nattasha Kelvin</h4>
+                        <p class="text-sm text-gray-500">Designer</p>
+                        <div class="text-yellow-400 text-sm">★★★★★</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mt-4 text-sm leading-relaxed">
+                    “Add an excerpt from your personal biography, or simply let the world know who you are
+                    and what you have to offer…”
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-100 shadow-sm p-6 rounded-lg w-full md:w-1/3">
+                <div class="flex items-center gap-4">
+                    <img src="img/img_index/section7_1.jpg" class="rounded-full w-14 h-14" alt="">
+                    <div>
+                        <h4 class="font-bold">Cincinnati</h4>
+                        <p class="text-sm text-gray-500">Designer</p>
+                        <div class="text-yellow-400 text-sm">★★★★★</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mt-4 text-sm leading-relaxed">
+                    “Leverage agile frameworks to provide a robust synopsis for high level overviews”
+                </p>
+            </div>
+
+        </div>
+</section>
+<!-- ================== SECTION 8================== -->
+<section class="bg-[#6E75FF]"> 
+     <div class="py-24 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+
+            <!-- LEFT -->
+            <div class="text-white">
+
+                <!-- SMALL TITLE -->
+                <p class="text-[#C6C9FF] text-sm mb-3 font-medium tracking-wide">
+                    How We Work
+                </p>
+
+                <!-- MAIN TITLE -->
+                <h2 class="text-3xl font-bold mb-4 leading-tight">
+                    To Get Your Business <br> To The Next Level
+                </h2>
+
+                <!-- TEXT -->
+                <p class="text-[#E4E5FF] text-[15px] leading-7 mb-10">
+                    Leverage agile frameworks to provide a robust synopsis for high level
+                    overviews. Iterative approaches foster collaborative thinking 
+                    to further the overall.
+                </p>
+
+                <!-- GREEN BOX LIKE IMAGE -->
+                <div class="bg-[#3CE3B2] p-5 rounded-xl flex items-center gap-5 mb-10 shadow-lg">
+
+                    <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center text-[#3CE3B2] text-xl font-bold leading-5">
+                        562+ <br> Project
+                    </div>
+
+                    <p class="text-black font-semibold text-sm leading-6">
+                        We have 50+ years of experience.<br>
+                        We offer whitecollar services to you
+                    </p>
+                </div>
+
+                <!-- FEATURES -->
+                <div class="space-y-5">
+
+                    <div class="flex items-start gap-3">
+                        <div class="w-3 h-3 bg-[#3CE3B2] rounded-full mt-2"></div>
+                        <p class="text-[#D9DBFF] text-[15px] leading-6">
+                            <span class="font-semibold">Planning</span> – Leverage agile frameworks to provide templates for high level overviews.
+                        </p>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <div class="w-3 h-3 bg-[#3CE3B2] rounded-full mt-2"></div>
+                        <p class="text-[#D9DBFF] text-[15px] leading-6">
+                            <span class="font-semibold">Briefing</span> – Prototypes to provide templates for high level experiences.
+                        </p>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <div class="w-3 h-3 bg-[#3CE3B2] rounded-full mt-2"></div>
+                        <p class="text-[#D9DBFF] text-[15px] leading-6">
+                            <span class="font-semibold">Evaluation</span> – Leverage agile frameworks to provide templates for further evolution.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div>
+                <!-- FORM TITLE ABOVE THE BOX -->
+                <p class="text-[#C6C9FF] text-sm mb-3 font-medium tracking-wide">
+                    Book Now
+                </p>
+
+                <div class="bg-white rounded-xl shadow-xl p-8">
+
+                    <h3 class="text-xl font-semibold text-gray-700 mb-6">
+                        Get Free Business Appointment
+                    </h3>
+
+                    <input type="text" placeholder="Yourname" 
+                           class="w-full border border-gray-300 p-3 rounded-lg text-sm mb-4">
+
+                    <input type="email" placeholder="Email Address" 
+                           class="w-full border border-gray-300 p-3 rounded-lg text-sm mb-4">
+
+                    <input type="text" placeholder="Phone Number" 
+                           class="w-full border border-gray-300 p-3 rounded-lg text-sm mb-4">
+
+                    <div class="flex gap-4 mb-4">
+                        <input type="date" class="w-1/2 border border-gray-300 p-3 rounded-lg text-sm">
+                        <input type="time" class="w-1/2 border border-gray-300 p-3 rounded-lg text-sm">
+                    </div>
+
+                    <textarea placeholder="Service Description" rows="4"
+                              class="w-full border border-gray-300 p-3 rounded-lg text-sm mb-6"></textarea>
+
+                    <button class="w-full bg-[#3CE3B2] text-black font-semibold py-3 rounded-lg">
+                        Submit
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================== SECTION 9================== -->
+<section class="team-section">
+        <div class="container">
+            <div class="team-image-wrapper">
+                <img src="img/img_index/team_section.jpg" alt="Our Team" class="team-image">
+                <div class="team-overlay">
+                    <h2>Our Expert Team</h2>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- ================== SECTION 10================== -->
+<section class="section_9">
+
+  <div class="container py-5">
+
+    <p class="text-sm text-green-400">● Our Recent News</p>
+    <h2 class="fw-bold mb-4 text-dark">Latest Posts</h2>
+
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-6">
+        <div class="card post-card rounded-3 overflow-hidden shadow">
+          <img src="img/img_index/img2_in_index.png" alt="Post Image">
+
+          <div class="card-body text-dark">
+            <div class="d-flex gap-2 mb-2">
+              <span class="badge bg-primary">April 19 2021</span>
+              <span class="badge bg-success">5 Minute Read</span>
+              <span class="badge bg-success">Business</span>
+            </div>
+
+            <h6 class="fw-bold">A Business Consulting That Can Produce</h6>
+            <p class="text-secondary mb-2">
+              Leverage agile frameworks to provide a robust synopsis for high level overviews.
+            </p>
+            <a href="#" class="text-primary fw-semibold">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6">
+        <div class="card post-card rounded-3 overflow-hidden shadow card2">
+          <img src="img/img_index/img1_in_index.png" alt="Post Image">
+
+          <div class="card-body text-dark">
+            <div class="d-flex gap-2 mb-2">
+              <span class="badge bg-primary">April 17 2021</span>
+              <span class="badge bg-success">4 Minute Read</span>
+              <span class="badge bg-success">Business</span>
+            </div>
+
+            <h6 class="fw-bold">Team Identifiers, Benefits, and How To Build One</h6>
+            <p class="text-secondary mb-2">
+              Collaboratively administrate empowered markets to corporate strategy foster innovation.
+            </p>
+            <a href="#" class="text-primary fw-semibold">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Green Subscribe Block -->
+  <div class="green-block py-5 mt-5 text-center">
+    <div class="green-content">
+      <p class="text-white text-sm">● Subscribe to Whitecollar</p>
+      <h2 class="fw-bold mb-3">Need An Experienced Whitecollar Job Service? Contact Us</h2>
+      <p class="text-white mb-4">
+        Leverage agile frameworks to provide a robust strategy for your business growth.
+      </p>
+      <button class="btn btn-primary px-4 py-2 rounded-pill">Get Started</button>
+    </div>
+  </div>
+
+</section>
+<!-- ================== footer================== -->
+<footer class="footer">
+  <div class="container">
+
+    <!-- Top Icons Section -->
+    <div class="row mb-5 text-center text-md-start justify-content-between">
+      <div class="col-md-3 d-flex flex-column align-items-center md:items-start mb-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="img/img_index/logo.png" alt="Logo" style="width:40px; height:40px; object-fit:contain;" />
+          <span class="text-white fw-bold fs-5">WhiteCollar</span>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+        <div>
+          <h6>Call Us</h6>
+          <p class="m-0">+01 569 896 654</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h6>Mail Us</h6>
+          <p class="m-0">Info@Example.com</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div>
+          <h6>Location</h6>
+          <p class="m-0">Amsterdam, 109-74</p>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Main Footer Links -->
+    <div class="row justify-content-between">
+
+      <div class="col-md-3 mb-4">
+        <h6>Quick Link</h6>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6>Our Services</h6>
+        <a href="#">Financial Consulting</a>
+        <a href="#">Business Management</a>
+        <a href="#">Consultant & Programs</a>
+        <a href="#">Company Management</a>
+        <a href="#">Insurance & Finance</a>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6>Utility Page</h6>
+        <a href="#">Style Guide</a>
+        <a href="#">Licenses</a>
+        <a href="#">Instructions</a>
+        <a href="#">Changelog</a>
+        <a href="#">404 Page</a>
+      </div>
+
+      <!-- Subscribe section -->
+      <div class="col-md-3">
+        <h6>Subscribe</h6>
+        <p>Join Our Mailing List & get our news.</p>
+        <div class="subscribe-box d-flex gap-2">
+          <input type="email" placeholder="your email address" />
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Bottom Footer -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="m-0">Copyright © <span class="text-indigo-400">WhiteCollar</span> | Designed by <span class="text-indigo-400">VictorFlow</span> - Powered by Webflow</p>
+
+      <div class="flex gap-4 text-lg mt-3 md:mt-0">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

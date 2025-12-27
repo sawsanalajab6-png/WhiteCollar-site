@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abute Us - WhiteCollar</title>
+
+  <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Remix Icons  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- font aousam -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Lineicons  -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+
+
+<!-- style lin -->
+ <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<!-- ================== nav bar ================== -->
+<nav>
+<!-- 🔵 TOP BAR (ثابت) -->
+<div class="w-full bg-gray-800 text-white text-sm py-2 fixed top-0 left-0 z-50">
+    <div class="container mx-auto flex justify-between items-center flex-wrap">
+
+        <!-- Left Info -->
+        <div class="flex items-center gap-6">
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-teal-400"></i>
+                24 Olive Street, Prairie, NY 53580
+            </span>
+
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-green-400"></i>
+                whitecollar@gmail.com
+            </span>
+        </div>
+
+        <!-- Right Info -->
+        <div class="flex items-center gap-6">
+            <span class="flex items-center gap-2">
+                <i class="fa-regular fa-clock text-green-300"></i>
+                Mon - Fri: 8:00 am - 5:00 pm
+            </span>
+
+            <div class="flex items-center gap-3 text-lg">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 🔵 MAIN NAVBAR (ثابت) -->
+<nav class="bg-white shadow fixed top-10 left-0 w-full z-40">
+    <div class="container mx-auto flex justify-between items-center py-4">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <img src="../img/img_index/logo.png" alt="Logo" class="w-10 h-10 object-contain">
+
+            <div class="text-2xl font-semibold flex items-center gap-1">
+                <span class="text-blue-600">White</span>
+                <span class="text-gray-800">Collar</span>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <ul class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+
+            <li><a href="../index.html" class="hover:text-blue-600">Home</a></li>
+            <li><a href="../html/abute_us.html" class="hover:text-blue-600">About Us</a></li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle hover:text-blue-600" href="#" role="button" data-bs-toggle="dropdown">
+                    Pages
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/faq.html">FAQ</a></li>
+                    <li><a class="dropdown-item" href="../html/bloge_single.html">Bloge single</a></li>
+                    <li><a class="dropdown-item" href="../html/changelog.html">Changelog</a></li>
+                    <li><a class="dropdown-item" href="../html/404error.html">404 Error</a></li>
+                    <li><a class="dropdown-item" href="../html/license.html">License</a></li>
+                    <li><a class="dropdown-item" href="../html/password.html">Password</a></li>
+                    <li><a class="dropdown-item" href="../html/projccts.html">Projects</a></li>
+                    <li><a class="dropdown-item" href="../html/projccts_single.html">Projects Single</a></li>
+                    <li><a class="dropdown-item" href="../html/price_packes.html">Price Packes</a></li>
+                    <li><a class="dropdown-item" href="../html/servesis_single.html">Servesis Single</a></li>
+                    <li><a class="dropdown-item" href="../html/team.html">Team</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../html/our serveses.html" class="hover:text-blue-600">Services</a></li>
+            <li><a href="../html/bloge.html" class="hover:text-blue-600">Blog</a></li>
+            <li><a href="../html/contact.html" class="hover:text-blue-600">Contact Us</a></li>
+        </ul>
+
+        <!-- Button -->
+        <a href="#" class="hidden md:block bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">
+            Get Consulting
+        </a>
+    </div>
+</nav>
+</nav>
+<!-- ================== heder section ================== -->
+<section class="relative h-72 md:h-80 lg:h-96 bg-cover bg-center"
+         style="background-image: url('../img/img_abute/section.jpeg');">
+
+    <!-- الطبقة السوداء على اليسار مع البلور -->
+    <div class="absolute inset-y-0 left-0 w-1/2 bg-black/60 backdrop-blur-sm flex items-center px-10">
+
+        <!-- المحتوى -->
+        <div class="text-white max-w-sm">
+            <p class="text-sm text-green-400 mb-1">• About Us</p>
+
+            <h2 class="text-3xl font-bold mb-2">
+                Know About Us
+            </h2>
+
+            <p class="text-sm text-gray-200 leading-relaxed">
+                Collaboratively administrate empowered markets plug and play networks dynamically procrastinated.
+            </p>
+        </div>
+    </div>
+
+</section>
+<!-- ================== section 2 ================== -->
+ <!-- Section -->
+<section class="container py-5">
+
+  <div class="row align-items-center">
+
+    <!-- Left Card -->
+    <div class="col-lg-4 mb-4">
+      <div class="bg-white shadow-sm p-3 rounded">
+        
+        <img src="../img/img_index/section2.jpeg" class="w-100 rounded mb-3" alt="Team">
+
+        <h4 class="fw-bold">We’re Ready To Grow Your Business With Us</h4>
+        <p class="text-muted mt-2">
+          Leverage agile frameworks to provide a robust synopsis for high level overviews.
+        </p>
+
+        <a href="#" class="fw-semibold text-dark mt-3 d-inline-block hover:underline">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="col-lg-8">
+
+      <p class="text-green-500 fw-semibold mb-1">• Welcome Whitecollar</p>
+
+      <h2 class="fw-bold mb-3">We Care About Your Business Plan.</h2>
+
+      <p class="text-muted mb-2">
+        Leverage agile frameworks to provide a robust synopsis for high level overviews.
+        Iterative approaches to corporate strategy foster collaborative thinking to further the overall.
+      </p>
+
+      <p class="text-muted mb-4">
+        Leverage agile frameworks to provide a robust synopsis for high level overviews.
+        Iterative approaches to corporate strategy.
+      </p>
+
+      <!-- Cards -->
+      <div class="border rounded p-3 mb-3 d-flex gap-3">
+
+        <div class="rounded-circle bg-blue-100 p-2">
+          <i class="bi bi-bullseye text-primary"></i>
+        </div>
+
+        <div>
+          <h6 class="fw-bold mb-1">Our Vision</h6>
+          <p class="text-muted small mb-0">
+            Capitalize on low hanging fruit to identify a ballpark value added activity.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="border rounded p-3 mb-4 d-flex gap-3">
+
+        <div class="rounded-circle bg-blue-100 p-2">
+          <i class="bi bi-flag text-primary"></i>
+        </div>
+
+        <div>
+          <h6 class="fw-bold mb-1">Our Mission</h6>
+          <p class="text-muted small mb-0">
+            Podcasting operational change management inside of workflows to establish a framework.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Button -->
+      <a href="#" class="btn btn-primary px-4 py-2">
+        More About Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ================== section 3 ================== -->
+<section class="py-20">
+    <div class="text-center mb-14">
+        <span class="text-teal-500 font-semibold">• Work Process</span>
+        <h2 class="text-3xl font-bold mt-3">How We Work</h2>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center gap-4">
+
+            <!-- Box 1 -->
+            <div class="col-md-3 bg-gray-50 shadow-sm p-6 rounded-lg text-center">
+                <div class="flex justify-center mb-4">
+                    <span class="text-4xl text-teal-500">
+                        <i class="lni lni-calendar"></i>
+                    </span>
+                </div>
+                <h4 class="font-semibold mb-2">Make Appointment</h4>
+                <p class="text-gray-600 text-sm mb-4">
+                    Leverage agile frameworks provide synopsis high level overviews value proposition.
+                </p>
+                <a href="#" class="text-blue-500 text-sm font-medium hover:underline">Testimonials</a>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-md-3 bg-gray-50 shadow-sm p-6 rounded-lg text-center">
+                <div class="flex justify-center mb-4">
+                    <span class="text-4xl text-blue-600">
+                        <i class="lni lni-comments"></i>
+                    </span>
+                </div>
+                <h4 class="font-semibold mb-2">Consultation</h4>
+                <p class="text-gray-600 text-sm mb-4">
+                    Leverage agile frameworks provide synopsis high level overviews value proposition.
+                </p>
+                <a href="#" class="text-blue-500 text-sm font-medium hover:underline">Testimonials</a>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="col-md-3 bg-gray-50 shadow-sm p-6 rounded-lg text-center">
+                <div class="flex justify-center mb-4">
+                    <span class="text-4xl text-teal-500">
+                        <i class="lni lni-shield"></i>
+                    </span>
+                </div>
+                <h4 class="font-semibold mb-2">Enjoy the Service</h4>
+                <p class="text-gray-600 text-sm mb-4">
+                    Leverage agile frameworks provide synopsis high level overviews value proposition.
+                </p>
+                <a href="#" class="text-blue-500 text-sm font-medium hover:underline">Testimonials</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================== section 4 ================== -->
+<section class="relative stats-bg py-20">
+    <!-- Blur Layer -->
+    <div class="blur-overlay"></div>
+
+    <div class="container relative z-10">
+        
+        <!-- جعل العناصر على نفس السطر -->
+        <div class="row flex-nowrap justify-content-center text-center">
+
+            <!-- Box 1 -->
+            <div class="col-md-3 p-6">
+                <div class="flex justify-center mb-3">
+                    <span class="text-4xl text-blue-500">
+                        <i class="lni lni-briefcase"></i>
+                    </span>
+                </div>
+                <h3 class="text-3xl font-bold text-blue-500">10+</h3>
+                <h6 class="font-semibold mt-2">Years Of Experience</h6>
+                <p class="text-gray-600 text-sm mt-2">
+                    Synopsis high level overviews value proposition.
+                </p>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-md-3 p-6">
+                <div class="flex justify-center mb-3">
+                    <span class="text-4xl text-indigo-500 bg-indigo-100 p-4 rounded-full">
+                        <i class="lni lni-users"></i>
+                    </span>
+                </div>
+                <h3 class="text-3xl font-bold text-indigo-600">5960</h3>
+                <h6 class="font-semibold mt-2">Satisfied Clients</h6>
+                <p class="text-gray-600 text-sm mt-2">
+                    Synopsis high level overviews value proposition.
+                </p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="col-md-3 p-6">
+                <div class="flex justify-center mb-3">
+                    <span class="text-4xl text-blue-500">
+                        <i class="lni lni-clipboard"></i>
+                    </span>
+                </div>
+                <h3 class="text-3xl font-bold text-blue-600">50k</h3>
+                <h6 class="font-semibold mt-2">IT Problems Solved</h6>
+                <p class="text-gray-600 text-sm mt-2">
+                    Synopsis high level overviews value proposition.
+                </p>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="col-md-3 p-6">
+                <div class="flex justify-center mb-3">
+                    <span class="text-4xl text-green-500">
+                        <i class="lni lni-network"></i>
+                    </span>
+                </div>
+                <h3 class="text-3xl font-bold text-green-600">25+</h3>
+                <h6 class="font-semibold mt-2">Pro Team Members</h6>
+                <p class="text-gray-600 text-sm mt-2">
+                    Synopsis high level overviews value proposition.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================== section 5 ================== -->
+<section 
+    class="relative h-[350px] bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('../img/img_abute/section5.jpg');"
+>
+
+    <!-- Green Blur Overlay -->
+    <div class="absolute inset-0 bg-green-400/40 backdrop-blur-xl"></div>
+
+    <div class="relative z-10 text-center px-4">
+
+        <span class="text-black text-sm font-medium">• Short Video</span>
+
+        <h2 class="text-3xl font-bold text-black mt-2">
+            Our Presentation
+        </h2>
+
+        <p class="text-black mt-3 max-w-xl mx-auto">
+            Collaboratively administrate channels whereas virtual takes 
+            predominate procedures reliable supply chains.
+        </p>
+
+        <!-- Play Button -->
+        <div class="flex justify-center mt-6">
+            <button 
+                class="w-14 h-14 rounded-full bg-[#7b5cff] text-white flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition"
+            >
+                <i class="lni lni-play"></i>
+            </button>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================== section 6 ================== -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <!-- العنوان العلوي -->
+    <div class="text-center mb-4">
+      <span class="text-teal-500 font-medium text-lg">Our Team</span>
+    </div>
+    
+    <!-- العنوان الرئيسي -->
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
+      Meet Our Experts
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- البطاقة الأولى: Nattasha Kelvin -->
+      <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <!-- الصورة مع overlay أزرق -->
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" 
+               alt="Nattasha Kelvin" 
+               class="w-full h-80 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+        </div>
+        <!-- النصوص في الأسفل -->
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <h3 class="text-2xl font-bold mb-1">Nattasha Kelvin</h3>
+          <p class="text-lg font-medium mb-4">Managing Director</p>
+          <!-- الأيقونات الاجتماعية -->
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163c3.405 0 6.162-2.759 6.162-6.163 0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> <!-- Instagram -->
+            </a>
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg> <!-- Facebook -->
+            </a>
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.232-.544 0-1.075-.053-1.595-.154 1.064 3.32 4.145 5.734 7.795 5.803-2.856 2.24-6.458 3.579-10.379 3.579-.674 0-1.34-.04-1.998-.117 3.707 2.379 8.115 3.758 12.843 3.758 15.414 0 23.837-12.772 23.837-23.837 0-.362-.008-.72-.024-1.078 1.635-1.179 3.056-2.648 4.177-4.321z"/></svg> <!-- Twitter/X -->
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- البطاقة الثانية: David Simpson -->
+      <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" 
+               alt="David Simpson" 
+               class="w-full h-80 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <h3 class="text-2xl font-bold mb-1">David Simpson</h3>
+          <p class="text-lg font-medium mb-4">Designer</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163c3.405 0 6.162-2.759 6.162-6.163 0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> <!-- Instagram -->
+            </a>
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg> <!-- Facebook -->
+            </a>
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.232-.544 0-1.075-.053-1.595-.154 1.064 3.32 4.145 5.734 7.795 5.803-2.856 2.24-6.458 3.579-10.379 3.579-.674 0-1.34-.04-1.998-.117 3.707 2.379 8.115 3.758 12.843 3.758 15.414 0 23.837-12.772 23.837-23.837 0-.362-.008-.72-.024-1.078 1.635-1.179 3.056-2.648 4.177-4.321z"/></svg> <!-- Twitter/X -->
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- البطاقة الثالثة: Madeleine Grant -->
+      <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400" 
+               alt="Madeleine Grant" 
+               class="w-full h-80 object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <h3 class="text-2xl font-bold mb-1">Madeleine Grant</h3>
+          <p class="text-lg font-medium mb-4">Marketing Specialist</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163c3.405 0 6.162-2.759 6.162-6.163 0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> <!-- Instagram -->
+            </a>
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg> <!-- Facebook -->
+            </a>
+            <a href="#" class="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.232-.544 0-1.075-.053-1.595-.154 1.064 3.32 4.145 5.734 7.795 5.803-2.856 2.24-6.458 3.579-10.379 3.579-.674 0-1.34-.04-1.998-.117 3.707 2.379 8.115 3.758 12.843 3.758 15.414 0 23.837-12.772 23.837-23.837 0-.362-.008-.72-.024-1.078 1.635-1.179 3.056-2.648 4.177-4.321z"/></svg> <!-- Twitter/X -->
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================== footer ================== -->
+<footer class="footer">
+  <div class="container">
+
+    <!-- Top Icons Section -->
+    <div class="row mb-5 text-center text-md-start justify-content-between">
+      <div class="col-md-3 d-flex flex-column align-items-center md:items-start mb-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="../img/img_index/logo.png" alt="Logo" style="width:40px; height:40px; object-fit:contain;" />
+          <span class="text-white fw-bold fs-5">WhiteCollar</span>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+        <div>
+          <h6>Call Us</h6>
+          <p class="m-0">+01 569 896 654</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h6>Mail Us</h6>
+          <p class="m-0">Info@Example.com</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex gap-3 mb-4 items-center">
+        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div>
+          <h6>Location</h6>
+          <p class="m-0">Amsterdam, 109-74</p>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Main Footer Links -->
+    <div class="row justify-content-between">
+
+      <div class="col-md-3 mb-4">
+        <h6>Quick Link</h6>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6>Our Services</h6>
+        <a href="#">Financial Consulting</a>
+        <a href="#">Business Management</a>
+        <a href="#">Consultant & Programs</a>
+        <a href="#">Company Management</a>
+        <a href="#">Insurance & Finance</a>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6>Utility Page</h6>
+        <a href="#">Style Guide</a>
+        <a href="#">Licenses</a>
+        <a href="#">Instructions</a>
+        <a href="#">Changelog</a>
+        <a href="#">404 Page</a>
+      </div>
+
+      <!-- Subscribe section -->
+      <div class="col-md-3">
+        <h6>Subscribe</h6>
+        <p>Join Our Mailing List & get our news.</p>
+        <div class="subscribe-box d-flex gap-2">
+          <input type="email" placeholder="your email address" />
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Bottom Footer -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="m-0">Copyright © <span class="text-indigo-400">WhiteCollar</span> | Designed by <span class="text-indigo-400">VictorFlow</span> - Powered by Webflow</p>
+
+      <div class="flex gap-4 text-lg mt-3 md:mt-0">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
